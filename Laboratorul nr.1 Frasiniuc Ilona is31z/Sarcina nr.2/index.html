@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифр Цезаря с двумя ключами</title>
+</head>
+<body>
+    <h1>Шифр Цезаря с двумя ключами</h1>
+    <label for="message">Введите текст:</label>
+    <input type="text" id="message" placeholder="Текст для шифрования">
+    <label for="key1">Введите ключ 1 (1-25):</label>
+    <input type="number" id="key1" min="1" max="25" placeholder="Ключ 1">
+    <label for="key2">Введите ключ 2 (не менее 7 латинских букв):</label>
+    <input type="text" id="key2" placeholder="Ключ 2">
+    <button onclick="encrypt()">Зашифровать</button>
+    <button onclick="decrypt()">Расшифровать</button>
+    <h2>Результат:</h2>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
