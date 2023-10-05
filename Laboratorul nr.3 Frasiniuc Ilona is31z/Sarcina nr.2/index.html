@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Algoritmul Vigenère pentru limba română</h1>
+
+    <label for="operation">Alegeți operația:</label>
+    <select id="operation">
+        <option value="encrypt">Criptare</option>
+        <option value="decrypt">Decriptare</option>
+    </select>
+
+    <label for="key">Cheie (lungime >= 7):</label>
+    <input type="text" id="key" required><br>
+
+    <label for="message">Mesaj:</label>
+    <textarea id="message" rows="4" cols="50" required></textarea><br>
+
+    <button onclick="process()">Procesează</button>
+
+    <h2>Rezultat:</h2>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>

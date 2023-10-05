@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифр Плейфера</title>
+</head>
+<body>
+    <h1>Playfair Cipher</h1>
+    <label for="key">Ключ (минимальная длина 7 символов):</label>
+    <input type="text" id="key" required><br><br>
+    
+    <label for="message">Сообщение:</label>
+    <input type="text" id="message" required><br><br>
+    
+    <label for="operation">Операция:</label>
+    <select id="operation" required>
+        <option value="encrypt">Шифрование</option>
+        <option value="decrypt">Расшифрование</option>
+    </select><br><br>
+    
+    <button onclick="process()">Обработать</button><br><br>
+    
+    <h2>Результат:</h2>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
